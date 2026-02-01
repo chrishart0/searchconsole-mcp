@@ -1,0 +1,22 @@
+[project]
+name = "searchconsole-mcp"
+version = "0.1.0"
+description = "MCP server for Google Search Console data"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "google-auth>=2.40",
+    "google-api-python-client>=2.0",
+]
+
+[project.scripts]
+searchconsole-mcp = "searchconsole_mcp.server:run_server"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
