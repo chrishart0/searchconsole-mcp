@@ -34,3 +34,7 @@ The server communicates over stdio. Each tool call creates a fresh Google API se
 ## Authentication
 
 Uses Google Application Default Credentials (`google.auth.default()`). The environment must have valid Google Cloud credentials configured (service account, user credentials, or `GOOGLE_APPLICATION_CREDENTIALS` env var).
+
+## Git Conventions
+
+The default branch is `master`, not `main`. Use `master` for PRs and branch references.
